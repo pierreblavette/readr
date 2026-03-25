@@ -178,7 +178,7 @@
   }
 
   .page-title-row {
-    margin-bottom: 56px;
+    margin-bottom: clamp(24px, 5.6vh, 56px);
     min-height: fit-content;
   }
 
@@ -198,7 +198,7 @@
     justify-content: space-between;
     gap: 16px;
     min-height: 40px;
-    margin-bottom: 40px;
+    margin-bottom: clamp(20px, 4vh, 40px);
   }
 
   .page-title {
@@ -449,7 +449,7 @@
   .main-wrap {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 56px 40px 80px;
+    padding: clamp(28px, 5.6vh, 56px) 40px 80px;
     min-height: calc(100vh - 121px);
   }
 
@@ -1024,16 +1024,10 @@
     .footer-inner { padding-left: 20px; padding-right: 20px; }
     .hero { padding-top: 32px; }
     .books-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
-    .main-wrap { padding-top: 40px; }
-    .page-title-row { margin-bottom: 36px; }
-    .search-row { margin-bottom: 28px; }
   }
 
   @media (max-width: 480px) {
     .books-grid { grid-template-columns: 1fr; }
-    .main-wrap { padding-top: 28px; }
-    .page-title-row { margin-bottom: 24px; }
-    .search-row { margin-bottom: 20px; }
   }
 
   /* ─── ADD BOOK MODAL ─── */
