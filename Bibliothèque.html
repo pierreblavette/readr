@@ -55,6 +55,8 @@
     color: var(--text);
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     transition: var(--transition);
   }
 
@@ -450,7 +452,7 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 56px 40px 80px;
-    min-height: calc(100vh - 120px);
+    flex: 1;
   }
 
   .result-line {
